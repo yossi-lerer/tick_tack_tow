@@ -17,6 +17,11 @@ If all cells are filled and no player has won, the game ends in a draw.
 2. Open the project in your computer.
 3. Run the `main.py` file.
 
+## How to play
+1. Select 1 or 2 from the displayed menu.
+2. enter your name
+3. enter two number for your next move first num for row and secend num for column. for exemple 1.2
+
 ## Current Main Tasks
 - Player initialization
 - Board creation

@@ -4,11 +4,11 @@ from board import create_board, print_board, place_symbol
 def play_single_player_game():
     player_name = ask_player_name()
     symble = "X"
+    c_boars = create_board()
+    show_board = print_board(c_boars)
     round = 0
     while round < 9:
-        c_boars = create_board()
         turn_message = show_turn_message(player_name, symble)
-        show_board = print_board(c_boars)
         move = ask_move()
         place = place_symbol(c_boars, move[0], move[1], symble)
         show_after_place = print_board(c_boars)

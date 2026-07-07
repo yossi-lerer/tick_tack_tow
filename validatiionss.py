@@ -1,10 +1,14 @@
 def is_position_inside_board(board , row, col):
     real_size_of_board_row_and_col=len(board)
-    return row<real_size_of_board_row_and_col and row>-1 and col<real_size_of_board_row_and_col and col>-1
+    if row<real_size_of_board_row_and_col and row>-1 and col<real_size_of_board_row_and_col and col>-1==True:
+        return True   
+    print("its not in borad")
+    return False
 def is_empty(board, row, col):
     if board[row][col]=="*":
         return True
-    return False
+    print("the position is taken try another")
+    return False 
 def is_vaild_move(board,row,col):
     first_chek=is_position_inside_board(board,row,col)
     if first_chek == False:

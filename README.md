@@ -24,12 +24,14 @@ If all cells are filled and no player has won, the game ends in a draw.
 4. Number selection is from 1 to 3 for a row and from 1 to 3 for a column
 
 ## Current Main Tasks
-- Player initialization by chaim
-- Board creation and display by arie
-- menu creation by elyashiv
+- Player initialization by and check win in row chaim
+- Board creation and display and validitions by  arie
+- menu creation and by elyashiv
 - position selection and launching the game by yossi
 
 ## Existing Features
 - Player name input
 - Player symbol assignment
 - Game board display
+- validitions chek move chek is empty chek vaild input
+- chek wins , chek diagonal,chek rows, col

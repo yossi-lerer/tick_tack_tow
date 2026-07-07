@@ -23,11 +23,10 @@ If all cells are filled and no player has won, the game ends in a draw.
 3. enter two number for your next move first num for row and secend num for column. for exemple 1.2
 
 ## Current Main Tasks
-- Player initialization
-- Board creation
-- Turn management
-- Move validation
-- Win and draw detection
+- Player initialization by chaim
+- Board creation and display by arie
+- menu creation by elyashiv
+- position selection and launching the game by yossi
 
 ## Existing Features
 - Player name input

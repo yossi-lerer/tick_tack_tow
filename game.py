@@ -20,4 +20,3 @@ def ask_move() -> tuple[int, int]:
     move[0] = int(move[0])
     move[1] = int(move[1])
     return move[0], move[1]
-play_single_player_game()

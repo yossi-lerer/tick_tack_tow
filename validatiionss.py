@@ -20,9 +20,12 @@ def is_vaild_move(board,row,col):
 
 def vaild_move_input(lst_num):
     if len(lst_num) != 2:
+        print("Input in the wrong format Be sure to input in this way 1.2")
         return False
     try:
         int(lst_num[0])
         int(lst_num[1])
     except:
+        print("Input in the wrong format Be sure to input in this way 1.2")
         return False
+    return True

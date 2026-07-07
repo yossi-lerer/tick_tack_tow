@@ -19,4 +19,4 @@ def ask_move() -> tuple[int, int]:
     move = move.split(".")
     move[0] = int(move[0])
     move[1] = int(move[1])
-    return move[0], move[1]
+    return move[0]-1, move[1]-1

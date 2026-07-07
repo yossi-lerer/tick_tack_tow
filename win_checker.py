@@ -1,3 +1,15 @@
+def check_row_win(board,symbol):
+    for row in board:
+        check=True
+        for num in range(len(row)):
+            if row[num] !=symbol:
+                   check=False
+                   break
+        if check is True: 
+            return check
+    return check            
+
+
 def check_diagonal_win(board,symbal):
     lens_of_board=len(board)
     right_diagonal_its_folwing = True
@@ -29,7 +41,3 @@ def check_win(board, symbol: str) -> bool:
         return True
     else:
         return False
-    
-print(check_win([["o","o" ,"o"],["o","x","x"],["x","o","o"]], "x"))
-        
-

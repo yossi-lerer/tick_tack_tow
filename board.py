@@ -10,4 +10,7 @@ def print_board(board):
         print("")
         for j in range(col):
             print(board[i][j] ,end= "")
-
+    
+def place_symbol(board,row,col,symbol):
+    board[row][col] = symbol
+    

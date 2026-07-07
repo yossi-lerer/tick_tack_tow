@@ -8,7 +8,7 @@
 
 ## Game Rules
 Tic-Tac-Toe is a two-player game played on a 3×3 board.
-Players take turns placing their symbol (X or O) in an empty cell.
+Players take turns placing their symbol (X or O) in an empty cell (Marked with an asterisk).
 The first player to complete a row, column, or diagonal wins.
 If all cells are filled and no player has won, the game ends in a draw.
 

@@ -29,11 +29,13 @@ def ask_move() -> tuple[int, int]:
     while True:
         vaild = vaild_move_input(move)
         if vaild == True:
-            move[0] = int(move[0])
-            move[1] = int(move[1])
-            return move[0]-1, move[1]-1
+            break
         else:
-            ask_move()
+            move = input("please enter two number for your next move first num for row and secend num for column. Insert a . (point) between the numbers. for exemple 1.2 ")
+            move = move.split(".")
+    move[0] = int(move[0])
+    move[1] = int(move[1])
+    return move[0]-1, move[1]-1
 
 def ask_valid_move(bourd,row,col):
     while True:

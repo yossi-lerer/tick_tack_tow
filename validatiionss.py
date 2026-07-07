@@ -1,6 +1,6 @@
 def is_position_inside_board(board , row, col):
     real_size_of_board_row_and_col=len(board)
-    if row<real_size_of_board_row_and_col and row>-1 and col<real_size_of_board_row_and_col and col>-1==True:
+    if row<real_size_of_board_row_and_col and row>-1 and col<real_size_of_board_row_and_col and col>-1:
         return True   
     print("its not in borad")
     return False

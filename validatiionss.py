@@ -14,5 +14,11 @@ def is_vaild_move(board,row,col):
         return True
     return False
 
-
-    
+def vaild_move_input(lst_num):
+    if len(lst_num) != 2:
+        return False
+    try:
+        int(lst_num[0])
+        int(lst_num[1])
+    except:
+        return False

@@ -7,21 +7,24 @@ from win_checker import check_win
 def play_single_player_game():
     player_name = ask_player_name()
     symble = "X"
-    c_boars = create_board()
-    show_board = print_board(c_boars)
+    create_new_board = create_board()
+    show_board = print_board(create_new_board)
     round = 0
     while round < 9:
         turn_message = show_turn_message(player_name, symble)
         move = ask_move()
-        move=ask_valid_move(c_boars,move[0],move[1])
-        place = place_symbol(c_boars, move[0], move[1], symble)
-        show_after_place = print_board(c_boars)
-        if check_win:
-            print("~~~Congratulations! ", player_name,"win!~~~")
+        move=ask_valid_move(create_new_board,move[0],move[1])
+        place = place_symbol(create_new_board, move[0], move[1], symble)
+        show_after_place = print_board(create_new_board)
+        winner=check_win(create_new_board,symble)
+        if winner:
+            print("~~Congratulations~~ ", player_name,"win!")
+            exit()
         round += 1
 
+
 def ask_move() -> tuple[int, int]:
-    move = input("please enter two number for your next move first num for row and secend num for column. for exemple 1.2 ")
+    move = input("please enter two number for your next move first num for row and secend num for column. Insert a . (point) between the numbers. for exemple 1.2 ")
     move = move.split(".")
     move[0] = int(move[0])
     move[1] = int(move[1])

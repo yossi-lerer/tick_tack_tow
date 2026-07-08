@@ -20,8 +20,9 @@ If all cells are filled and no player has won, the game ends in a draw.
 
 ## How to play
 1. Select 1 or 2 from the displayed menu.
-2. enter two number for your next move first num for row and secend num for column. for exemple 1.2
+2. in your turn enter two number for your next move first num for row and secend num for column. for exemple 1.2
 3. Number selection is from 1 to 3 for a row and from 1 to 3 for a column
+4. The turn passes to the next player.
 
 ## Current Main Tasks
 - Player initialization by and check win in row chaim

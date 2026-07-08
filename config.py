@@ -1,1 +1,1 @@
-settinfs_game={"name player 1":"chaim" ,"name player 2": "arie","symbol plater 1":"x", " symbol player 2":"o", "select type board":"&"}
+settings_game={"name player 1":"chaim" ,"name player 2": "arie","symbol player 1":"x", "symbol player 2":"o", "select type board":"&"}

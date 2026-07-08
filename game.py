@@ -43,7 +43,6 @@ def ask_valid_move(bourd,row,col):
             return row,col
         
         else:
-            print("!invalid index, try again!")
             row,col=ask_move()
         
     

@@ -1,6 +1,6 @@
 def is_position_inside_board(board , row, col):
     real_size_of_board_row_and_col=len(board)
-    if row<real_size_of_board_row_and_col and row>-1 and col<real_size_of_board_row_and_col and col>-1==True:
+    if row<real_size_of_board_row_and_col and row>-1 and col<real_size_of_board_row_and_col and col>-1:
         return True   
     print("its not in borad")
     return False
@@ -18,5 +18,14 @@ def is_vaild_move(board,row,col):
         return True
     return False
 
-
-    
+def vaild_move_input(lst_num):
+    if len(lst_num) != 2:
+        print("Input in the wrong format Be sure to input in this way 1.2")
+        return False
+    try:
+        int(lst_num[0])
+        int(lst_num[1])
+    except:
+        print("Input in the wrong format Be sure to input in this way 1.2")
+        return False
+    return True
